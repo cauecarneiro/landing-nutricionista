@@ -1,7 +1,7 @@
-const WHATSAPP_NUMBER = "[TELEFONE]";
-const INSTAGRAM_HANDLE = "[INSTAGRAM_HANDLE]";
-const EMAIL = "[EMAIL]";
-const ADDRESS = "[ENDERECO]";
+const WHATSAPP_NUMBER = "5561991711408";
+const INSTAGRAM_HANDLE = "pablomoreiranutri";
+const EMAIL = "pablomoreiranutricionista@gmail.com";
+const ADDRESS = "Rua Copaíba, Lote 1 Torre A, Sala 910, DF Plaza";
 
 export default function Contact() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.`;

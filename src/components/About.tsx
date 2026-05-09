@@ -10,7 +10,7 @@ const specialties = [
 ];
 
 const education = [
-  { title: "Graduação em Nutrição", year: "2025", institution: "[UNIVERSIDADE]" },
+  { title: "Graduação em Nutrição", year: "2025", institution: "IESB – Asa Sul" },
   { title: "Certificação Internacional em Antropometria", year: "2025", institution: "Instituto ISAK" },
 ];
 

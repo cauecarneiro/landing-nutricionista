@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WHATSAPP_NUMBER = "[TELEFONE]";
+const WHATSAPP_NUMBER = "5561991711408";
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.`;
@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 mb-8 w-fit">
               <div className="h-px w-8 bg-pm-gold" />
               <span className="text-pm-gold text-xs font-medium tracking-[0.2em] uppercase">
-                CRN-3 · [CRN] · Brasília DF
+                CRN-3 · 27515 · Brasília DF
               </span>
             </div>
 

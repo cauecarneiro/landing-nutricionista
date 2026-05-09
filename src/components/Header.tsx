@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#contato", label: "Contato" },
 ];
 
-const WHATSAPP_NUMBER = "[TELEFONE]";
+const WHATSAPP_NUMBER = "5561991711408";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

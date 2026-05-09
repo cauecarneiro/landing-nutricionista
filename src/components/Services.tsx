@@ -1,9 +1,10 @@
-const WHATSAPP_NUMBER = "[TELEFONE]";
+const WHATSAPP_NUMBER = "5561991711408";
 
 const plans = [
   {
     name: "Consulta Online",
     description: "Atendimento por videochamada com suporte via WhatsApp.",
+    pitch: "Ideal para quem busca flexibilidade sem abrir mão da qualidade. Você recebe toda a atenção de uma consulta completa, de onde estiver — com plano alimentar e suporte durante o processo.",
     price: "[VALOR_ONLINE]",
     highlight: false,
     cta: "Agendar Online",
@@ -18,6 +19,7 @@ const plans = [
   {
     name: "Consulta Presencial",
     description: "Avaliação completa no consultório em Brasília DF.",
+    pitch: "A experiência mais completa do meu atendimento. Além da consulta, você passa por avaliação de composição corporal com bioimpedância e sai com um plano detalhado e material de apoio exclusivo.",
     price: "[VALOR_PRESENCIAL]",
     highlight: true,
     badge: "Mais procurado",
@@ -34,6 +36,7 @@ const plans = [
   {
     name: "Plano Alimentar",
     description: "Plano alimentar personalizado sem necessidade de consulta.",
+    pitch: "Para quem quer organização alimentar de forma prática. Com base em um questionário detalhado sobre seus hábitos e objetivos, elaboro um cardápio semanal personalizado pronto para seguir.",
     price: "[VALOR_PLANO]",
     highlight: false,
     cta: "Solicitar Plano",
@@ -96,11 +99,11 @@ export default function Services() {
               <div className="p-8 flex flex-col flex-1">
                 {/* Plan header */}
                 <div className="mb-6 pb-6 border-b border-pm-border/50">
-                  <h3 className={`font-display text-xl mb-1 ${plan.highlight ? "text-white" : "text-pm-brown"}`}>
+                  <h3 className={`font-display text-xl mb-2 ${plan.highlight ? "text-white" : "text-pm-brown"}`}>
                     {plan.name}
                   </h3>
-                  <p className={`text-sm leading-relaxed ${plan.highlight ? "text-white/60" : "text-pm-muted"}`}>
-                    {plan.description}
+                  <p className={`text-sm leading-relaxed ${plan.highlight ? "text-white/70" : "text-pm-brown/80"}`}>
+                    {plan.pitch}
                   </p>
                 </div>
 

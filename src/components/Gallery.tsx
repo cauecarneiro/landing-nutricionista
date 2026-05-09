@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const photos = [
-  { src: "/images/atendimento/IMG_0313.jpg", alt: "Pablo Moreira com modelos de gordura e músculo" },
+  { src: "/images/atendimento/IMG_0282.jpg", alt: "Consulta com paciente" },
   { src: "/images/atendimento/IMG_0294.jpg", alt: "Atendimento nutricional" },
   { src: "/images/atendimento/IMG_0307.jpg", alt: "Consulta presencial" },
-  { src: "/images/atendimento/IMG_0438.jpg", alt: "Atendimento presencial" },
-  { src: "/images/atendimento/IMG_0429.jpg", alt: "Atendimento nutricional" },
-  { src: "/images/atendimento/IMG_0481.jpg", alt: "Consulta presencial" },
   { src: "/images/atendimento/IMG_0427.jpg", alt: "Detalhes do consultório" },
-  { src: "/images/atendimento/IMG_0441.jpg", alt: "Consulta nutricional" },
-  { src: "/images/atendimento/IMG_0282.jpg", alt: "Consulta com paciente" },
+  { src: "/images/atendimento/IMG_0429.jpg", alt: "Atendimento nutricional" },
   { src: "/images/atendimento/IMG_0435.jpg", alt: "Consulta com paciente" },
+  { src: "/images/atendimento/IMG_0438.jpg", alt: "Atendimento presencial" },
+  { src: "/images/atendimento/IMG_0441.jpg", alt: "Consulta nutricional" },
+  { src: "/images/atendimento/IMG_0427.jpg", alt: "Atendimento com paciente" },
+  { src: "/images/atendimento/IMG_0481.jpg", alt: "Consulta presencial" },
   { src: "/images/atendimento/IMG_0488.jpg", alt: "Atendimento nutricional" },
 ];
 
@@ -36,14 +36,12 @@ export default function Gallery() {
           {photos.map((photo, i) => (
             <div
               key={photo.src}
-              className={`relative overflow-hidden group ${
-                i === 0 ? "col-span-2 lg:col-span-1 lg:row-span-2" : "col-span-1"
-              }`}
+              className={`relative overflow-hidden group ${i === 0 ? "col-span-2 lg:col-span-1 lg:row-span-2" : "col-span-1"
+                }`}
             >
               <div
-                className={`relative w-full ${
-                  i === 0 ? "h-64 lg:h-full lg:min-h-[520px]" : "aspect-square"
-                }`}
+                className={`relative w-full ${i === 0 ? "h-64 lg:h-full lg:min-h-[520px]" : "aspect-square"
+                  }`}
               >
                 <Image
                   src={photo.src}

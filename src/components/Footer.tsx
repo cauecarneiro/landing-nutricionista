@@ -1,7 +1,7 @@
-const WHATSAPP_NUMBER = "[TELEFONE]";
-const INSTAGRAM_HANDLE = "[INSTAGRAM_HANDLE]";
-const EMAIL = "[EMAIL]";
-const CRN = "[CRN]";
+const WHATSAPP_NUMBER = "5561991711408";
+const INSTAGRAM_HANDLE = "pablomoreiranutri";
+const EMAIL = "pablomoreiranutricionista@gmail.com";
+const CRN = "27515";
 
 const navLinks = [
   { href: "#sobre", label: "Sobre mim" },
