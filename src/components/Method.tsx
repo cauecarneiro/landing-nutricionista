@@ -9,7 +9,7 @@ const steps = [
     number: "02",
     title: "Plano Personalizado",
     description:
-      "Nada de protocolos genéricos. Cada plano alimentar é construído como uma roupa sob medida — para o seu corpo, horários e cultura.",
+      "Nada de protocolos genéricos. Cada plano alimentar é construído como uma roupa sob medida para o seu corpo, horários e cultura.",
   },
   {
     number: "03",
@@ -21,7 +21,7 @@ const steps = [
     number: "04",
     title: "Resultado Duradouro",
     description:
-      "Construímos autonomia. O objetivo não é você depender de mim para sempre — é você entender seu corpo e fazer escolhas livres.",
+      "Construímos autonomia. O objetivo não é você depender de mim para sempre, é você entender seu corpo e fazer escolhas livres.",
   },
 ];
 

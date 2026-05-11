@@ -135,7 +135,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Pablo Moreira. Todos os direitos reservados.
           </p>
           <p className="text-white/20 text-xs">
-            CRN-3 · {CRN} — Nutricionista registrado no Conselho Regional de Nutricionistas
+            CRN-1 · {CRN} — Nutricionista registrado no Conselho Regional de Nutricionistas
           </p>
         </div>
       </div>

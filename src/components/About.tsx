@@ -6,12 +6,12 @@ const specialties = [
   "Nutrição Esportiva",
   "Saúde da Mulher",
   "Emagrecimento Saudável",
-  "Nutrição Clínica",
 ];
 
 const education = [
   { title: "Graduação em Nutrição", year: "2025", institution: "IESB – Asa Sul" },
   { title: "Certificação Internacional em Antropometria", year: "2025", institution: "Instituto ISAK" },
+  { title: "Pós-graduação em Emagrecimento e Metabolismo", year: "2026", institution: "UNIGuaçu SP" },
 ];
 
 export default function About() {
@@ -62,12 +62,12 @@ export default function About() {
             <div className="space-y-4 text-pm-muted leading-relaxed mb-8">
               <p>
                 Sou nutricionista clínico e comportamental com paixão por entender o ser humano além da
-                dieta. Acredito que cada pessoa carrega uma história única com a comida — e que essa
+                dieta. Acredito que cada pessoa carrega uma história única com a comida, e que essa
                 história merece ser ouvida, respeitada e transformada com cuidado.
               </p>
               <p>
                 Minha abordagem combina ciência da nutrição funcional com psicologia do comportamento
-                alimentar, criando planos que funcionam na vida real — não apenas no papel.
+                alimentar, criando planos que funcionam na vida real, não apenas no papel.
                 Atendo em Brasília DF e online para todo o Brasil.
               </p>
             </div>

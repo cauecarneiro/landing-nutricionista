@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const photos = [
-  { src: "/images/atendimento/IMG_0282.jpg", alt: "Consulta com paciente" },
+  { src: "/images/atendimento/IMG_0469.jpg", alt: "Atendimento nutricional" },
   { src: "/images/atendimento/IMG_0294.jpg", alt: "Atendimento nutricional" },
   { src: "/images/atendimento/IMG_0307.jpg", alt: "Consulta presencial" },
-  { src: "/images/atendimento/IMG_0427.jpg", alt: "Detalhes do consultório" },
+  { src: "/images/atendimento/IMG_0481.jpg", alt: "Consulta presencial" },
   { src: "/images/atendimento/IMG_0429.jpg", alt: "Atendimento nutricional" },
   { src: "/images/atendimento/IMG_0435.jpg", alt: "Consulta com paciente" },
-  { src: "/images/atendimento/IMG_0438.jpg", alt: "Atendimento presencial" },
+  { src: "/images/atendimento/IMG_0427.jpg", alt: "Detalhes do consultório" },
   { src: "/images/atendimento/IMG_0441.jpg", alt: "Consulta nutricional" },
-  { src: "/images/atendimento/IMG_0427.jpg", alt: "Atendimento com paciente" },
-  { src: "/images/atendimento/IMG_0481.jpg", alt: "Consulta presencial" },
+  { src: "/images/atendimento/IMG_0282.jpg", alt: "Consulta com paciente" },
+  { src: "/images/atendimento/IMG_0438.jpg", alt: "Atendimento presencial" },
   { src: "/images/atendimento/IMG_0488.jpg", alt: "Atendimento nutricional" },
 ];
 

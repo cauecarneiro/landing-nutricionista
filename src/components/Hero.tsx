@@ -19,14 +19,9 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 mb-8 w-fit">
               <div className="h-px w-8 bg-pm-gold" />
               <span className="text-pm-gold text-xs font-medium tracking-[0.2em] uppercase">
-                CRN-3 · 27515 · Brasília DF
+                CRN-1 · 27515 · Brasília DF
               </span>
             </div>
-
-            {/* Subtitle */}
-            <p className="text-white/50 text-sm font-medium tracking-[0.15em] uppercase mb-4">
-              Nutrição Clínica &amp; Comportamental
-            </p>
 
             {/* Main headline */}
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mb-6">
@@ -65,21 +60,6 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Stats */}
-            <div className="flex gap-8 mt-12 pt-8 border-t border-white/10">
-              <div>
-                <p className="text-white font-display text-2xl font-bold">+200</p>
-                <p className="text-white/40 text-xs tracking-wide uppercase mt-1">Pacientes atendidos</p>
-              </div>
-              <div>
-                <p className="text-white font-display text-2xl font-bold">5 anos</p>
-                <p className="text-white/40 text-xs tracking-wide uppercase mt-1">De experiência</p>
-              </div>
-              <div>
-                <p className="text-white font-display text-2xl font-bold">Online</p>
-                <p className="text-white/40 text-xs tracking-wide uppercase mt-1">e Presencial</p>
-              </div>
-            </div>
           </div>
 
           {/* Photo */}
@@ -107,11 +87,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-        <span className="text-white text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-12 bg-white animate-pulse" />
-      </div>
     </section>
   );
 }

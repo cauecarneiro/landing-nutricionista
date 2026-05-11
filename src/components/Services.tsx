@@ -2,51 +2,49 @@ const WHATSAPP_NUMBER = "5561991711408";
 
 const plans = [
   {
-    name: "Consulta Online",
-    description: "Atendimento por videochamada com suporte via WhatsApp.",
-    pitch: "Ideal para quem busca flexibilidade sem abrir mão da qualidade. Você recebe toda a atenção de uma consulta completa, de onde estiver — com plano alimentar e suporte durante o processo.",
-    price: "[VALOR_ONLINE]",
+    name: "Consulta Individual",
+    pitch: "Indicada para quem quer iniciar com clareza: diagnóstico completo, avaliação de composição corporal e construção de um plano alimentar personalizado para o seu objetivo.",
     highlight: false,
-    cta: "Agendar Online",
+    badge: undefined,
+    cta: "Solicitar informações",
     features: [
-      "Anamnese detalhada",
+      "Avaliação de composição corporal (B.I.A)",
+      "Análise de rotina, objetivos e alinhamento estratégico",
       "Plano alimentar personalizado",
-      "Análise de exames",
-      "Suporte via WhatsApp por 7 dias",
+      "Orientações práticas na entrega",
+      "Acesso ao aplicativo",
     ],
-    message: "Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20online.",
+    message: "Olá%2C%20Pablo%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20Consulta%20Individual.",
   },
   {
-    name: "Consulta Presencial",
-    description: "Avaliação completa no consultório em Brasília DF.",
-    pitch: "A experiência mais completa do meu atendimento. Além da consulta, você passa por avaliação de composição corporal com bioimpedância e sai com um plano detalhado e material de apoio exclusivo.",
-    price: "[VALOR_PRESENCIAL]",
+    name: "Plano Trimestral",
+    pitch: "Formato pensado para acompanhar a execução do plano e ajustar conforme a sua evolução física, resposta ao treino e rotina ao longo dos 3 meses.",
     highlight: true,
     badge: "Mais procurado",
-    cta: "Agendar Presencial",
+    cta: "Solicitar informações",
     features: [
-      "Avaliação corporal completa",
-      "Bioimpedância inclusa",
-      "Plano alimentar detalhado",
-      "Suporte via WhatsApp por 15 dias",
-      "Material educativo exclusivo",
+      "Tudo da Consulta Individual",
+      "2 retornos mensais",
+      "Check-in quinzenal estruturado",
+      "Checklist mensal de adesão",
+      "Ajustes contínuos no plano",
     ],
-    message: "Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial.",
+    message: "Olá%2C%20Pablo%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Trimestral.",
   },
   {
-    name: "Plano Alimentar",
-    description: "Plano alimentar personalizado sem necessidade de consulta.",
-    pitch: "Para quem quer organização alimentar de forma prática. Com base em um questionário detalhado sobre seus hábitos e objetivos, elaboro um cardápio semanal personalizado pronto para seguir.",
-    price: "[VALOR_PLANO]",
+    name: "Plano Semestral",
+    pitch: "A opção de maior custo-benefício. Tempo estendido para consolidar hábitos, com todas as ferramentas práticas que facilitam a execução no dia a dia.",
     highlight: false,
-    cta: "Solicitar Plano",
+    badge: "Melhor custo-benefício",
+    cta: "Solicitar informações",
     features: [
-      "Questionário completo online",
-      "Cardápio semanal personalizado",
-      "Lista de compras inclusa",
-      "1 revisão inclusa",
+      "Tudo do Plano Trimestral",
+      "5 retornos ao longo dos 6 meses",
+      "Manual do Paciente",
+      "Lista de compras + Guia de marcas",
+      "Checklist mensal de adesão",
     ],
-    message: "Olá%2C%20gostaria%20de%20solicitar%20um%20plano%20alimentar.",
+    message: "Olá%2C%20Pablo%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Semestral.",
   },
 ];
 
@@ -79,22 +77,23 @@ export default function Services() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
           {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`relative flex flex-col ${
-                plan.highlight
-                  ? "bg-pm-dark text-white border-2 border-pm-gold shadow-2xl scale-[1.02]"
-                  : "bg-white border border-pm-border shadow-sm"
-              }`}
-            >
-              {/* Badge */}
-              {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-pm-gold text-white text-xs font-medium px-4 py-1 tracking-widest uppercase">
+            <div key={plan.name} className="flex flex-col">
+              {/* Badge row — always reserves space so all cards align */}
+              <div className="h-7 flex items-center justify-center">
+                {plan.badge && (
+                  <span className={`text-white text-xs font-medium px-4 py-1 tracking-widest uppercase whitespace-nowrap ${plan.highlight ? "bg-pm-gold" : "bg-pm-green"}`}>
                     {plan.badge}
                   </span>
-                </div>
-              )}
+                )}
+              </div>
+
+              <div
+                className={`relative flex flex-col flex-1 ${
+                  plan.highlight
+                    ? "bg-pm-dark text-white border-2 border-pm-gold shadow-2xl"
+                    : "bg-white border border-pm-border shadow-sm"
+                }`}
+              >
 
               <div className="p-8 flex flex-col flex-1">
                 {/* Plan header */}
@@ -104,16 +103,6 @@ export default function Services() {
                   </h3>
                   <p className={`text-sm leading-relaxed ${plan.highlight ? "text-white/70" : "text-pm-brown/80"}`}>
                     {plan.pitch}
-                  </p>
-                </div>
-
-                {/* Price */}
-                <div className="mb-6">
-                  <p className={`text-xs uppercase tracking-wider mb-1 ${plan.highlight ? "text-white/40" : "text-pm-muted"}`}>
-                    A partir de
-                  </p>
-                  <p className={`font-display text-3xl font-bold ${plan.highlight ? "text-pm-gold" : "text-pm-brown"}`}>
-                    R$ {plan.price}
                   </p>
                 </div>
 
@@ -144,12 +133,13 @@ export default function Services() {
                 </a>
               </div>
             </div>
+            </div>
           ))}
         </div>
 
         {/* Note */}
         <p className="text-center text-pm-muted text-sm mt-8">
-          Todos os planos incluem retorno para acompanhamento de resultados. Fale comigo para tirar dúvidas.
+          Todos os planos incluem avaliação de composição corporal (B.I.A) e plano alimentar personalizado. Fale comigo para tirar dúvidas.
         </p>
       </div>
     </section>
