@@ -40,14 +40,14 @@ export default function Gallery() {
                 }`}
             >
               <div
-                className={`relative w-full ${i === 0 ? "h-64 lg:h-full lg:min-h-[520px]" : "aspect-square"
+                className={`relative w-full ${i === 0 ? "h-80 lg:h-full lg:min-h-[520px]" : "aspect-square"
                   }`}
               >
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className={`object-cover transition-transform duration-700 group-hover:scale-105 ${i === 0 ? "object-top" : "object-center"}`}
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-pm-dark/20 group-hover:bg-pm-dark/0 transition-colors duration-300" />
