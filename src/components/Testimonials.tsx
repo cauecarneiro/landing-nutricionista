@@ -33,7 +33,7 @@ const testimonials = [
     name: "Fernanda Souza",
     duration: "6 meses de acompanhamento",
     area: "Consulta Online",
-    text: "Faço consulta online e é incrível — parece que estamos no mesmo consultório. Pablo é extremamente atencioso e os planos realmente funcionam. Recomendo para qualquer pessoa.",
+    text: "Faço consulta online e é incrível, parece que estamos no mesmo consultório. Pablo é extremamente atencioso e os planos realmente funcionam. Recomendo para qualquer pessoa.",
   },
 ];
 

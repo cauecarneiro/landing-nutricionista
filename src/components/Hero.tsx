@@ -32,8 +32,8 @@ export default function Hero() {
 
             {/* Tagline */}
             <p className="text-white/60 text-lg lg:text-xl leading-relaxed mb-10 max-w-lg">
-              Ciência, escuta e presença em cada consulta. Uma abordagem que vai além da dieta
-              e constrói uma relação saudável com a comida para a vida toda.
+              Ciência, escuta e estratégia em cada consulta. Acompanhamento nutricional pensado
+              para gerar resultados sustentáveis e duradouros, sem extremismos.
             </p>
 
             {/* CTAs */}

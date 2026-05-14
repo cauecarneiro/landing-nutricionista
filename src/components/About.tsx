@@ -9,7 +9,7 @@ const specialties = [
 ];
 
 const education = [
-  { title: "Graduação em Nutrição", year: "2025", institution: "IESB – Asa Sul" },
+  { title: "Graduação em Nutrição", year: "2025", institution: "IESB, Asa Sul" },
   { title: "Certificação Internacional em Antropometria", year: "2025", institution: "Instituto ISAK" },
   { title: "Pós-graduação em Emagrecimento e Metabolismo", year: "2026", institution: "UNIGuaçu SP" },
 ];
@@ -61,7 +61,7 @@ export default function About() {
 
             <div className="space-y-4 text-pm-muted leading-relaxed mb-8">
               <p>
-                Sou nutricionista clínico e comportamental com paixão por entender o ser humano além da
+                Sou nutricionista clínico e comportamental focado em entender o ser humano além da
                 dieta. Acredito que cada pessoa carrega uma história única com a comida, e que essa
                 história merece ser ouvida, respeitada e transformada com cuidado.
               </p>

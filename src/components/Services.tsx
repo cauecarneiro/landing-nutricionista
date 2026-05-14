@@ -3,12 +3,13 @@ const WHATSAPP_NUMBER = "5561991711408";
 const plans = [
   {
     name: "Consulta Individual",
+    subtitle: "Para quem quer começar com clareza e direcionamento.",
     pitch: "Indicada para quem quer iniciar com clareza: diagnóstico completo, avaliação de composição corporal e construção de um plano alimentar personalizado para o seu objetivo.",
     highlight: false,
     badge: undefined,
-    cta: "Solicitar informações",
+    cta: "Conversar no WhatsApp",
     features: [
-      "Avaliação de composição corporal (B.I.A)",
+      "Avaliação de composição corporal (Antropometria ISAK)",
       "Análise de rotina, objetivos e alinhamento estratégico",
       "Plano alimentar personalizado",
       "Orientações práticas na entrega",
@@ -18,10 +19,11 @@ const plans = [
   },
   {
     name: "Plano Trimestral",
+    subtitle: "Estrutura e acompanhamento para gerar consistência.",
     pitch: "Formato pensado para acompanhar a execução do plano e ajustar conforme a sua evolução física, resposta ao treino e rotina ao longo dos 3 meses.",
     highlight: true,
     badge: "Mais procurado",
-    cta: "Solicitar informações",
+    cta: "Conversar no WhatsApp",
     features: [
       "Tudo da Consulta Individual",
       "2 retornos mensais",
@@ -33,10 +35,11 @@ const plans = [
   },
   {
     name: "Plano Semestral",
+    subtitle: "Consolidação de hábitos e resultados sustentáveis.",
     pitch: "A opção de maior custo-benefício. Tempo estendido para consolidar hábitos, com todas as ferramentas práticas que facilitam a execução no dia a dia.",
     highlight: false,
     badge: "Melhor custo-benefício",
-    cta: "Solicitar informações",
+    cta: "Conversar no WhatsApp",
     features: [
       "Tudo do Plano Trimestral",
       "5 retornos ao longo dos 6 meses",
@@ -98,9 +101,12 @@ export default function Services() {
               <div className="p-8 flex flex-col flex-1">
                 {/* Plan header */}
                 <div className="mb-6 pb-6 border-b border-pm-border/50">
-                  <h3 className={`font-display text-xl mb-2 ${plan.highlight ? "text-white" : "text-pm-brown"}`}>
+                  <h3 className={`font-display text-xl mb-1 ${plan.highlight ? "text-white" : "text-pm-brown"}`}>
                     {plan.name}
                   </h3>
+                  <p className={`text-xs mb-3 ${plan.highlight ? "text-pm-gold" : "text-pm-gold"}`}>
+                    {plan.subtitle}
+                  </p>
                   <p className={`text-sm leading-relaxed ${plan.highlight ? "text-white/70" : "text-pm-brown/80"}`}>
                     {plan.pitch}
                   </p>
@@ -139,7 +145,7 @@ export default function Services() {
 
         {/* Note */}
         <p className="text-center text-pm-muted text-sm mt-8">
-          Todos os planos incluem avaliação de composição corporal (B.I.A) e plano alimentar personalizado. Fale comigo para tirar dúvidas.
+          Todos os planos incluem avaliação de composição corporal por antropometria ISAK e plano alimentar personalizado. Fale comigo para tirar dúvidas.
         </p>
       </div>
     </section>

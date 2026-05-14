@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Philosophy from "@/components/Philosophy";
 import Method from "@/components/Method";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Philosophy />
         <Method />
         <Gallery />
         <Testimonials />

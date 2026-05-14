@@ -1,27 +1,27 @@
 const steps = [
   {
     number: "01",
-    title: "Avaliação Profunda",
+    title: "Consulta Inicial",
     description:
-      "Vou além dos exames laboratoriais. Mergulho na sua história, rotina, relação emocional com a comida e objetivos reais de vida.",
+      "A consulta inicial dura cerca de 1h30 para mapear sua alimentação, rotina, sono, atividade física, exames, comportamento alimentar e dificuldades reais do dia a dia. A composição corporal é avaliada por antropometria padronizada pela ISAK, protocolo reconhecido internacionalmente pela confiabilidade técnica na análise corporal.",
   },
   {
     number: "02",
-    title: "Plano Personalizado",
+    title: "Plano Construído Junto",
     description:
-      "Nada de protocolos genéricos. Cada plano alimentar é construído como uma roupa sob medida para o seu corpo, horários e cultura.",
+      "O plano alimentar não é imposto, é construído junto com você. Nada de protocolos genéricos: cada estratégia respeita seus horários, preferências, vida social e objetivos reais.",
   },
   {
     number: "03",
-    title: "Acompanhamento Contínuo",
+    title: "Acompanhamento Ativo",
     description:
-      "O processo não para na consulta. Estou junto nos ajustes, nas dúvidas do dia a dia e na celebração de cada conquista.",
+      "A cada 15 dias, realizamos check-ins estruturados para avaliar adesão, dificuldades, sono, hidratação e evolução, com ajustes contínuos no plano. O suporte próximo ajuda você a se sentir mais seguro e consistente.",
   },
   {
     number: "04",
-    title: "Resultado Duradouro",
+    title: "Educação Nutricional",
     description:
-      "Construímos autonomia. O objetivo não é você depender de mim para sempre, é você entender seu corpo e fazer escolhas livres.",
+      "O objetivo não é apenas entregar uma dieta, mas ajudar você a entender a alimentação de forma clara, prática e baseada em evidências, construindo autonomia e resultados que duram.",
   },
 ];
 
@@ -37,9 +37,8 @@ export default function Method() {
             <span className="text-pm-gold text-xs font-medium tracking-[0.2em] uppercase">Meu Método</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-pm-brown leading-tight">
-            O método que{" "}
-            <em className="text-pm-green font-display">transforma</em>{" "}
-            em vez de restringir.
+            Como funciona o{" "}
+            <em className="text-pm-green font-display">acompanhamento.</em>
           </h2>
         </div>
 
