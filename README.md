@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# landingpage
 
-## Getting Started
+Landing page de um nutricionista clínico e comportamental de Brasília, com planos de acompanhamento e agendamento de consulta pelo WhatsApp.
 
-First, run the development server:
+Site · Web (Next.js) · 2026
+
+[Página no ar](https://landingpage-lilac-two.vercel.app)
+
+## O que faz
+
+- Apresenta o profissional, a filosofia de trabalho e o método de atendimento (consulta inicial, plano construído junto, acompanhamento ativo e educação nutricional).
+- Mostra os planos (consulta individual, trimestral e semestral) com o que cada um inclui.
+- Tem galeria de fotos do atendimento e seção de depoimentos.
+- Leva para o WhatsApp com uma mensagem pronta para cada plano.
+- Layout responsivo, com fotos otimizadas pelo `next/image`.
+
+## Meu papel
+
+Projeto solo: desenvolvi o site, de 08/05/2026 a 14/05/2026. Os seis commits do repositório são de Cauê Carneiro.
+
+## Como foi feito
+
+- **Next.js 16 com App Router:** a página é montada em `src/app/page.tsx` a partir de componentes em `src/components/` (`Header`, `Hero`, `About`, `Philosophy`, `Method`, `Gallery`, `Testimonials`, `Services`, `Contact`, `Footer`).
+- **Estilo com Tailwind CSS 4:** as cores da marca ficam como variáveis em `src/app/globals.css` (prefixo `pm-`).
+- **Fontes com `next/font`:** Inter e Playfair Display.
+- **Metadados de SEO** (título, descrição, palavras-chave e Open Graph) definidos em `src/app/layout.tsx`.
+- **Deploy na Vercel.**
+
+## Tecnologias
+
+Next.js 16, React 19, TypeScript, Tailwind CSS 4, ESLint.
+
+## Como rodar
+
+Requisitos: Node.js e npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000). Outros comandos: `npm run build`, `npm start` e `npm run lint`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Licença
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[MIT](LICENSE).
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Feito por Cauê Crillanovick · [portfólio](https://cauecarneiro.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/cau%C3%AA-carneiro)
